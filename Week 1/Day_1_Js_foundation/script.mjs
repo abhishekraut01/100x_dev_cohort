@@ -72,35 +72,113 @@
 
 //_________________________________________________________
 
-let personsName = ['abhishek', 'nikhil', 'sakshi'];
-let gender = ['male', 'male', 'female'];
+// let personsName = ['abhishek', 'nikhil', 'sakshi'];
+// let gender = ['male', 'male', 'female'];
 
-for (let i = 0; i <= personsName.length; i++) {
-  if (gender[i] == 'male') {
-    console.log(personsName[i], 'is male')
-  }
-}
+// for (let i = 0; i <= personsName.length; i++) {
+//   if (gender[i] == 'male') {
+//     console.log(personsName[i], 'is male')
+//   }
+// }
 
 //we can optimise this code using objects in array
 
-const allUsers = [{
-  firstName: 'Abhishek',
-  lastName: 'Raut',
-  role: 'jrSDE',
-},
-{
-  firstName: 'suresh',
-  lastName: 'sharma',
-  role: 'jrSDE'
-},
-{
-  firstName: 'chinu',
-  lastName: 'Raut',
-  role: 'ips'
-}]
+// const allUsers = [{
+//   firstName: 'Abhishek',
+//   lastName: 'Raut',
+//   role: 'jrSDE',
+// },
+// {
+//   firstName: 'suresh',
+//   lastName: 'sharma',
+//   role: 'jrSDE'
+// },
+// {
+//   firstName: 'chinu',
+//   lastName: 'Raut',
+//   role: 'ips'
+// }]
 
-for(let i=0;i<allUsers.length;i++){
-  if(allUsers[i]['role']['lavda'] == 'jrSDE'){
-    console.log(allUsers[i]['firstName'])
-  }
-}
+// for(let i=0;i<allUsers.length;i++){
+//   if(allUsers[i]['role']['lavda'] == 'jrSDE'){
+//     console.log(allUsers[i]['firstName'])
+//   }
+// }
+//_______________________________________________________
+
+// function sum(a,b,fnToCall){
+//   let result = a+b;
+//   fnToCall(result)
+// }
+
+// function dispResult(data){
+//   console.log("sum of result is : ",data);
+// }
+
+// function dispResultPassive(data){
+//   console.log(`sum's result is :`,data);
+// }
+
+// const ans = sum(2,3,dispResult);
+//you are only allowed to call one function after this
+//how will you displayResult of a sum
+
+// function CalculateAirthematic(a,b,type){
+//   if( type == 'sum'){
+//     const ans = sum(a,b)
+//     return ans;
+//   }
+
+//   if(type == 'minus'){
+//     const ans = minus(a,b)
+//     return ans;
+//   }
+// }
+
+// function minus(a,b){
+//   return a-b;
+// }
+
+// function sum(a,b){
+//   return a+b;
+// }
+// const values = CalculateAirthematic(3,2,'sum')
+// console.log(values);
+
+// function CalculateAirthematic(a,b,finalfnc){
+//   const ans = finalfnc(a,b);
+//   return ans;
+// }
+
+// function minus(a,b){
+//   return a-b;
+// }
+
+// function sum(a,b){
+//   return a+b;
+// }
+// const values = CalculateAirthematic(3,2,sum)
+// console.log(values);
+
+// _______________________________________________________
+//assignments
+
+//problem 1 create the countdown till 30 using setinterval
+// let count = 0;
+// let  ans = setInterval(function(){
+//   if(count == 30){
+//     clearInterval(ans)
+//   }
+//   console.log(count);
+//   count++;
+ 
+// },1000)
+
+//problem 2 calculate the time it takes between a setTimeout call and the inner function actully running
+
+// create a terminal clock (hh:mm:ss)
+
+
+
+
+
