@@ -40,7 +40,7 @@ function cutIt(str,startIndex,endIndex){
 let ans = cutIt('Abhishek',0,4);
 console.log(ans);
 
-//_________________________________________________________
+//_______________________________________________
 
 let name = 'Abhishek Raut';
 console.log(name.replace("Abhishek","Chinu"))
