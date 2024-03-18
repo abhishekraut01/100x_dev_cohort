@@ -46,3 +46,4 @@ function printPyramid(rows) {
 
 // Example: Print a pyramid pattern with 5 rows
 printPyramid(5);
+console
