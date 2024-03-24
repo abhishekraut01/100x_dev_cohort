@@ -1,42 +1,29 @@
-//callbacks 
+//amazon Interview Question
 
-// function square (n){
-//     return n*n;
-// }
+// const sum = function(a){
+//     return function (b){
+//         if(b === undefined) return a;
+//         else return sum(a + b);
+//     };
+// };
+// console.log(sum(10)(20)(30)(40) ())
 
-// function cube(n){
-//     return n*n*n;
-// }
+// this question is based on currying concept in js
 
-// function someOfSomething(a,b){
-//     let square1 = cube(a);
-//     let square2 = square(b)
-//     return square1 + square2;
-// }
-// function sumOfCube(a,b){
-//     let cube1 = cube(a)
-//     let cube2 = cube(b);
-//     return cube1 + cube2;
-// }
-
-// let ans = sumOfCube(1,2);
-// console.log(ans);
-
-// the problem in this code is DRY which is do not repeat yourself while code we can fix this using callbacks
-
-function square (n){
-    return n*n;
+function sum(a) {
+    return (b) => {
+        return (c) => {
+            return a + b + c
+        }
+    }
 }
-function cube(n){
-    return n*n*n;
-}
-function sumOfSomething(a,b,fn){
-    let ans = fn(a)
-    let ans2 = fn(b)
-    return ans + ans2;
-}
+const sum1 = sum(1);
+console.log(sum1)
+const sum2  = sum1(2);
+console.log(sum2)
+const result  = sum2(3);
+console.log(result)
 
-let ans = sumOfSomething(1,2,square);
-console.log(ans);
-
-//this is the optimised version of code using callbacks
+const add = (a) => (b) => (c) => (d) => a+b+c+d;
+const results = add(2)(2)(2)(2)
+console.log(results)
