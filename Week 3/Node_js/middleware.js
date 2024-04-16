@@ -10,10 +10,6 @@ app.use((req,res,next)=>{
     console.log("hello from middleware 1")
     next();
 })
-app.use((req,res,next)=>{
-    console.log("hello from middleware 2")
-    next();
-})
 
 // Route to display users as HTML
 app.get('/users', (req, res) => {
