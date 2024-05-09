@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get('/',(req,res)=>{
-    res.send('hello');
+    res.send('This is home page');
 })
 app.get('/health-checkup',(req,res)=>{
     const username = req.headers.username;
