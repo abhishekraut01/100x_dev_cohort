@@ -1,0 +1,75 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the input field */
+#input-for-todo {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styles for the button */
+#myBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#myBtn:hover {
+    background-color: #218838;
+}
+
+/* Container for the to-do list */
+#todo-list {
+    width: 300px;
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Styles for individual to-do items */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.todo-item .text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.todo-item .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item .delete-btn:hover {
+    background-color: #c82333;
+}
